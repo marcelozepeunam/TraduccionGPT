@@ -20,9 +20,11 @@ def traducir_texto(texto, idioma):
     return response.choices[0].text.strip()
 
 #Dinámica del programa
-mi_texto=input("\nEscribe el texto que deseas traducir: ")
+print("\n(Es necesario que el texto no tenga saltos de linea), después de pegar el texto presione enter")
+mi_texto=input("\nEscribe el texto que deseas traducir: \n")
+
 mi_idioma=input("\n¿A qué idioma deseas traducirlo?: ")
 traduccion=traducir_texto(mi_texto, mi_idioma)
 
-print(f"\nTraducción: {traduccion}\n")
+print(f"\nTraducción: \n{traduccion}\n")
 
